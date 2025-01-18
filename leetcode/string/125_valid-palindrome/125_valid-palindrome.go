@@ -1,17 +1,8 @@
-package main
+package _25_valid_palindrome
 
 import (
-	"fmt"
 	"unicode"
 )
-
-func main() {
-	rs := isPalindrome("dadad")
-	fmt.Println(rs)
-	rs = isPalindrome("A man, a plan, a canal: Panama")
-	// amanaplanacanalpanama
-	fmt.Println(rs)
-}
 
 func isPalindrome(s string) bool {
 	start, end := 0, len(s)-1
